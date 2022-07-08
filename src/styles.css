@@ -115,20 +115,20 @@ padding: .5rem;
 /*  */
 
 .delete-btn{
-  /* position: absolute; */
-  display: block;
-  
-  bottom: -1rem;
-  right: .5rem;
+
+
   border: none;
+  /* display: block; */
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: .5rem;
   border-radius: 50%;
   background-color: rgb(255, 200, 0);
-  height: 2rem;
-  width: 2rem;
+  height:1.5rem;
+  width:1.5rem;
+  margin-left: auto;
+  text-align: center;
+
 
 }
 
@@ -140,9 +140,12 @@ p{
 
 .card-container{
   margin: 2rem 5rem;
-  /* border: dotted */
+  width: 80%;
+  /* border: dotted; */
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
+  margin: 0 auto;
 }
 .card{
   width: 20rem;
@@ -150,7 +153,12 @@ p{
   padding: 1rem;
   border-radius: .4rem;
   position: relative;
+  flex-shrink: 0;
+  word-wrap: break-word;
+
 }
+
+
 .card h3{
   margin-bottom: 1rem;
   font-size: 16px;

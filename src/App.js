@@ -5,15 +5,20 @@ import Header from './components/Header';
 import Note from './components/Note';
 import './styles.css';
 
-// create Header CreateArea Note components [x]
-// jsx header creat area and notes [x]
+// trash log instead of X
+// x can be closer to bottom []
+// create area height is too high []
+// only add when there is content inside []
+
+// full stack?
+// store title and content 
+// read
+// delete
+// copy from what's for dinner
 
 function App() {
 
-  const [notes, setNotes] = useState([    {title: "x",
-  content:"x"}])
-
-
+  const [notes, setNotes] = useState([])
 
   const addNote = (note) => {
     setNotes(prevValue => {
@@ -21,12 +26,9 @@ function App() {
     })
   }
 
-  // in Note js?
-  //handleDelete will
-  // filter the notes by looking at the key 
-  // and the index 
-  const handleDelete = () => {
-    
+  const handleDelete = (index) => {
+    let newNotes = notes.filter((el, i )=> i !== index)
+    setNotes(newNotes)
   }
 
   return (
@@ -37,7 +39,7 @@ function App() {
         {notes.map((note, index) => {
           const {title, content} = note
           return (
-            <Note key={index} title={title} content={content} handleDelete={handleDelete} />
+            <Note key={index} id={index} title={title} content={content} handleDelete={handleDelete} />
           )
         } )}
       </div>
