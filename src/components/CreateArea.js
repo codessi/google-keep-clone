@@ -68,11 +68,12 @@ const CreateArea = ({addNote}) => {
             onClick={() => setInputOpen(true)}
             value={note.content}
             className="text-area"
-            name="content"
+            name="content" rows="1"
             placeholder="Take a note..."
             id=""
             onChange={handleChange}
           ></textarea>
+        
           <button className ="add-btn" type="submit" >+</button>
         </form>
       </div>
