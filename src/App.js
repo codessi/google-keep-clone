@@ -5,10 +5,11 @@ import Header from './components/Header';
 import Note from './components/Note';
 import './styles.css';
 
-// trash log instead of X
-// x can be closer to bottom []
+
+
 // create area height is too high []
 // only add when there is content inside []
+// deploy on netlify
 
 // full stack?
 // store title and content 

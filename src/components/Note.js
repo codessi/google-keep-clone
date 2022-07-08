@@ -11,7 +11,8 @@ const Note = ({title, content, id,handleDelete}) => {
       <div className='card'>
         <h3>{title}</h3>
         <p>{content} </p>
-        <button className='delete-btn' onClick={()=> handleDelete(id)}></button>
+      <button className='delete-btn' onClick={() => handleDelete(id)}><img src="/trash-solid.svg" alt="" /></button>
+      
       </div>
   )
 }
